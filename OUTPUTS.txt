@@ -1,0 +1,446 @@
+EXP 6
+
+Graph input (enter each line, press Enter twice to finish):
+
+A:B,C
+B:A,D
+C:A
+D:B
+Heuristic input (enter each line, press Enter twice to finish):
+
+A:5
+B:3
+C:4
+D:0
+Starting node:
+
+A
+Expected Output:
+
+Best First Search Traversal: A B D
+
+
+EXP 7
+
+Graph input (format: node:neighbor1,weight1,neighbor2,weight2):
+
+A:B,2,C,3
+B:D,1
+Heuristic input:
+
+A:5
+B:3
+C:4
+D:0
+Starting node:
+
+A
+Expected Output:
+
+Best First Search Traversal: A B D
+
+
+EXP 9
+
+Graph input:
+
+A:B,2,C,3
+B:D,1
+Heuristic input:
+
+A:5
+B:3
+C:4
+D:0
+Starting node: A
+Goal node: D 
+
+Expected Output:
+
+Shortest Path: A -> B -> D
+Total Cost: 3
+
+
+EXP 10
+
+User input:
+Starting node: A
+Goal node: D Expected Output:
+
+Shortest Path: A -> B -> D
+Total Cost: 3
+
+
+EXP 11
+
+Graph input:
+
+A:B,2,C,3
+B:D,1
+Heuristic input:
+
+A:5
+B:3
+C:4
+D:0
+Starting node: A
+Goal node: D Expected Output:
+
+Shortest Path: A -> B -> D
+Total Cost: 3
+
+
+Experiment 12: Fuzzy Set Operations (3 Sets)
+
+Input:
+
+Set 1:
+
+x1:0.5
+x2:0.3
+Set 2:
+
+x1:0.7
+x3:0.4
+Set 3:
+
+x2:0.6
+x3:0.8
+Expected Output:
+
+Union: {'x1': 0.7, 'x2': 0.6, 'x3': 0.8}
+Intersection: {'x1': 0.5, 'x2': 0.3, 'x3': 0.4}
+Complement of Set 1: {'x1': 0.5, 'x2': 0.7}
+Complement of Set 2: {'x1': 0.3, 'x3': 0.6}
+Complement of Set 3: {'x2': 0.4, 'x3': 0.2}
+
+
+Experiment 13: Fuzzy Set Operations (De Morgan’s, Union)
+Input:
+
+Set 1:
+
+x1:0.5
+x2:0.3
+Set 2:
+
+x1:0.7
+x3:0.4
+Expected Output:
+
+
+Complement of Union: {'x1': 0.3, 'x2': 0.7, 'x3': 0.6}
+Intersection of Complements: {'x1': 0.3, 'x2': 0.7, 'x3': 0.6}
+De Morgan's Law (Complement of Union = Intersection of Complements) holds.
+
+
+Experiment 14: Fuzzy Set Operations (De Morgan’s, Intersection)
+Input:
+
+Set 1:
+
+x1:0.5
+x2:0.3
+Set 2:
+
+x1:0.7
+x3:0.4
+Expected Output:
+
+Complement of Intersection: {'x1': 0.5, 'x2': 0.7, 'x3': 0.6}
+Union of Complements: {'x1': 0.5, 'x2': 0.7, 'x3': 0.6}
+De Morgan's Law (Complement of Intersection = Union of Complements) holds.
+
+
+Experiment 15: Two-Player Game (Computer Wins/Draws)
+Input:
+
+Human moves (enter as row,col):
+
+1,1
+0,0
+2,2
+Expected Output (example, depends on computer’s optimal moves):
+
+ |   |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   |  
+Computer moves to (0,1)
+ | X |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   |  
+Enter your move (row,col): 0,0
+O | X |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   |  
+Computer moves to (2,0)
+O | X |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+X |   |  
+Computer wins!
+Note: The computer is unbeatable; human cannot win.
+
+Experiment 16: Two-Player Game (Computer Loses/Draws)
+Input:
+
+Human moves:
+
+1,1
+0,0
+0,2
+Expected Output (example):
+
+ |   |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   |  
+Computer moves to (2,2)
+ |   |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   | X
+Enter your move (row,col): 0,0
+O |   |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+ |   | X
+Computer moves to (2,0)
+O |   |  
+- - - - - - - -
+ | O |  
+- - - - - - - -
+X |   | X
+Enter your move (row,col): 0,2
+O |   | O
+- - - - - - - -
+ | O |  
+- - - - - - - -
+X |   | X
+You win!
+
+
+Experiment 17: Multi-Layer Perceptron (N Inputs, Two Hidden Layers, Binary Output)
+Input:
+
+Number of binary inputs: 3 Expected Output (varies due to randomness, example):
+
+Final Weights (W1):
+[[0.45 0.67 0.23 0.89]
+ [0.12 0.34 0.56 0.78]
+ [0.90 0.21 0.43 0.65]]
+Final Weights (W2):
+[[0.32 0.54 0.76 0.98]
+ [0.87 0.65 0.43 0.21]
+ [0.10 0.32 0.54 0.76]
+ [0.89 0.67 0.45 0.23]]
+Final Weights (W3):
+[[0.56]
+ [0.78]
+ [0.90]
+ [0.12]]
+Final Biases (b1):
+[[0.34 0.56 0.78 0.90]]
+Final Biases (b2):
+[[0.21 0.43 0.65 0.87]]
+Final Biases (b3):
+[[0.45]]
+Number of Steps: 100
+
+
+Experiment 18: Multi-Layer Perceptron (4 Inputs, One Hidden Layer, Two Outputs)
+Input: None (fixed architecture, runs automatically).
+Expected Output (varies, example):
+
+Final Weights (W1):
+[[0.45 0.67 0.23 0.89]
+ [0.12 0.34 0.56 0.78]
+ [0.90 0.21 0.43 0.65]
+ [0.32 0.54 0.76 0.98]]
+Final Weights (W2):
+[[0.56 0.78]
+ [0.90 0.12]
+ [0.34 0.56]
+ [0.78 0.90]]
+Final Biases (b1):
+[[0.21 0.43 0.65 0.87]]
+Final Biases (b2):
+[[0.45 0.67]]
+Number of Steps: 100
+
+
+Experiment 19: Multi-Layer Perceptron with Backpropagation (Sigmoid)
+Input:
+
+Number of binary inputs: 2 Expected Output (varies, example):
+
+Final Weights (W1):
+[[-0.12  0.34  0.56 -0.78]
+ [ 0.45 -0.67  0.23  0.89]]
+Final Weights (W2):
+[[ 0.32 -0.54  0.76  0.98]
+ [-0.87  0.65 -0.43  0.21]
+ [ 0.10 -0.32  0.54 -0.76]
+ [-0.89  0.67 -0.45  0.23]]
+Final Weights (W3):
+[[ 0.56]
+ [-0.78]
+ [ 0.90]
+ [-0.12]]
+Final Biases (b1):
+[[-0.34  0.56 -0.78  0.90]]
+Final Biases (b2):
+[[ 0.21 -0.43  0.65 -0.87]]
+Final Biases (b3):
+[[-0.45]]
+Number of Steps: 1000
+
+
+Experiment 20: Multi-Layer Perceptron with Backpropagation (ReLU)
+Input:
+
+Number of binary inputs: 2 Expected Output (varies, example):
+
+Final Weights (W1):
+[[ 0.23 -0.45  0.67  0.89]
+ [-0.12  0.34 -0.56  0.78]]
+Final Weights (W2):
+[[ 0.54 -0.76  0.98 -0.32]
+ [-0.65  0.43 -0.21  0.87]
+ [ 0.32 -0.54  0.76 -0.10]
+ [-0.67  0.45 -0.23  0.89]]
+Final Weights (W3):
+[[-0.56]
+ [ 0.78]
+ [-0.90]
+ [ 0.12]]
+Final Biases (b1):
+[[ 0.56 -0.78  0.90 -0.34]]
+Final Biases (b2):
+[[-0.43  0.65 -0.87  0.21]]
+Final Biases (b3):
+[[ 0.45]]
+Number of Steps: 1000
+
+
+Experiment 21: Multi-Layer Perceptron with Backpropagation (Tanh)
+Input:
+
+Number of binary inputs: 2 Expected Output (varies, example):
+
+Final Weights (W1):
+[[ 0.23 -0.45  0.67  0.89]
+ [-0.12  0.34 -0.56  0.78]]
+Final Weights (W2):
+[[ 0.54 -0.76  0.98 -0.32]
+ [-0.65  0.43 -0.21  0.87]
+ [ 0.32 -0.54  0.76 -0.10]
+ [-0.67  0.45 -0.23  0.89]]
+Final Weights (W3):
+[[-0.56]
+ [ 0.78]
+ [-0.90]
+ [ 0.12]]
+Final Biases (b1):
+[[ 0.56 -0.78  0.90 -0.34]]
+Final Biases (b2):
+[[-0.43  0.65 -0.87  0.21]]
+Final Biases (b3):
+[[ 0.45]]
+Number of Steps: 1000
+
+
+Experiment 22: Text Processing (Cleaning, Tokenization, Spell Correction)
+Input File:
+
+input.txt:
+input.txt
+plain
+Show inline
+
+User input:
+File path: input.txt Expected Output:
+
+Cleaned Tokens (after stop word removal and spell correction):
+['quick', 'brown', 'fox', 'jumps', 'over', 'lazy', 'dog', 'receives', 'no', 'reward']
+
+
+Experiment 23: Text Processing (Stemming, Lemmatization)
+Input File:
+
+input.txt:
+input.txt
+plain
+Show inline
+
+User input:
+File path: input.txt Expected Output:
+
+Stemmed Tokens:
+['the', 'dog', 'are', 'run', 'fast']
+Lemmatized Tokens:
+['the', 'dog', 'are', 'run', 'fast']
+3-Word Sequences (Lemmatized):
+['the dog are', 'dog are run', 'are run fast']
+
+
+Experiment 24: Text Processing (One-Hot Encoding)
+Input Files:
+
+doc1.txt:
+doc1.txt
+plain
+Show inline
+doc2.txt:
+doc2.txt
+plain
+Show inline
+doc3.txt:
+doc3.txt
+plain
+Show inline
+
+User input:
+File paths: doc1.txt, doc2.txt, doc3.txt Expected Output (simplified vocabulary, actual may vary):
+
+Vocabulary: ['clear', 'day', 'dog', 'fast', 'forest', 'fox', 'jumps', 'lazy', 'over', 'peaceful', 'quick', 'runs', 'skies', 'sleeps', 'sunny', 'the', 'through', 'tree', 'under', 'warm']
+One-Hot Encoded Matrix:
+Document 1: [1 1 1 0 0 1 1 1 1 0 1 0 1 0 1 1 0 0 0 0]
+Document 2: [0 1 1 0 0 0 0 1 0 1 0 0 0 1 0 1 0 1 1 1]
+Document 3: [1 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 0 0 0]
+
+
+Experiment 25: Text Processing (Bag of Words)
+Input Files: Same as Experiment 24 (doc1.txt, doc2.txt, doc3.txt).
+
+User input:
+File paths: doc1.txt, doc2.txt, doc3.txt Expected Output (simplified, actual may include frequency counts):
+
+Vocabulary: ['clear', 'day', 'dog', 'fast', 'forest', 'fox', 'jumps', 'lazy', 'over', 'peaceful', 'quick', 'runs', 'skies', 'sleeps', 'sunny', 'the', 'through', 'tree', 'under', 'warm']
+Bag of Words Matrix:
+Document 1: [1 1 1 0 0 1 1 1 1 0 1 0 1 0 1 2 0 0 0 0]
+Document 2: [0 1 1 0 0 0 0 1 0 1 0 0 0 1 0 2 0 1 1 1]
+Document 3: [1 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 0 0 0]
+
+
+Experiment 26: Text Processing (TF-IDF)
+Input Files: Same as Experiment 24 (doc1.txt, doc2.txt, doc3.txt).
+
+User input:
+File paths: doc1.txt, doc2.txt, doc3.txt Expected Output (rounded, actual values vary):
+
+Vocabulary: ['clear', 'day', 'dog', 'fast', 'forest', 'fox', 'jumps', 'lazy', 'over', 'peaceful', 'quick', 'runs', 'skies', 'sleeps', 'sunny', 'the', 'through', 'tree', 'under', 'warm']
+TF-IDF Matrix:
+Document 1: [0.24 0.24 0.24 0.   0.   0.24 0.31 0.24 0.31 0.   0.24 0.   0.24 0.   0.31 0.24 0.   0.   0.   0.  ]
+Document 2: [0.   0.27 0.27 0.   0.   0.   0.   0.27 0.   0.35 0.   0.   0.   0.35 0.   0.27 0.   0.35 0.35 0.35]
+Document 3: [0.29 0.   0.   0.38 0.38 0.29 0.   0.   0.   0.   0.29 0.38 0.29 0.   0.   0.22 0.38 0.   0.   0.  ]
